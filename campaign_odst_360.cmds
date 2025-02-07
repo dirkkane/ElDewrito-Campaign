@@ -1,0 +1,112 @@
+D:\ElDewrito\0.7.1\maps\tags.dat
+
+SetVariable workingfolder "C:\Users\Harry Ricketts\Documents\GitHub\MtnDewIt\ElDewrito-Campaign"
+SetVariable modsfolder "D:\ElDewrito\0.7.1\mods"
+SetVariable maps "F:\Bruh\H3ODSTMaps"
+SetVariable info "F:\Bruh\H3ODSTMaps\info"
+
+UseAudioCache "workingfolder\ODSTAudioCache"
+
+CreateModPackage 12 large
+ODST 360 Campaign Test
+ODST 360 Campaign Test
+MtnDewIt
+0.1
+Campaign
+
+mainmenu
+c100
+c200
+h100
+l200
+l300
+sc100
+sc110
+sc120
+sc130
+sc140
+sc150
+
+SwitchTagCache 0
+NameTag levels\ui\mainmenu\mainmenu.scenario levels\ui\mainmenu\mainmenu_ho
+OpenCacheFile "maps\mainmenu.map"
+PortTag !UpdateMapFiles *.scnr
+Exit
+UpdateMapFiles "info"
+
+SwitchTagCache 1
+OpenCacheFile "maps\c100.map"
+PortTag !UpdateMapFiles *.scnr
+Exit
+UpdateMapFiles "info"
+
+SwitchTagCache 2
+OpenCacheFile "maps\c200.map"
+PortTag !UpdateMapFiles *.scnr
+Exit
+UpdateMapFiles "info"
+
+SwitchTagCache 3
+OpenCacheFile "maps\h100.map"
+PortTag !UpdateMapFiles *.scnr
+Exit
+UpdateMapFiles "info"
+
+SwitchTagCache 4
+OpenCacheFile "maps\l200.map"
+PortTag !UpdateMapFiles *.scnr
+Exit
+UpdateMapFiles "info"
+
+SwitchTagCache 5
+OpenCacheFile "maps\l300.map"
+PortTag !UpdateMapFiles *.scnr
+Exit
+UpdateMapFiles "info"
+
+SwitchTagCache 6
+OpenCacheFile "maps\sc100.map"
+PortTag !UpdateMapFiles *.scnr
+Exit
+UpdateMapFiles "info"
+
+SwitchTagCache 7
+OpenCacheFile "maps\sc110.map"
+PortTag !UpdateMapFiles *.scnr
+Exit
+UpdateMapFiles "info"
+
+SwitchTagCache 8
+OpenCacheFile "maps\sc120.map"
+PortTag !UpdateMapFiles *.scnr
+Exit
+UpdateMapFiles "info"
+
+SwitchTagCache 9
+OpenCacheFile "maps\sc130.map"
+PortTag !UpdateMapFiles *.scnr
+Exit
+UpdateMapFiles "info"
+
+SwitchTagCache 10
+OpenCacheFile "maps\sc140.map"
+PortTag !UpdateMapFiles *.scnr
+Exit
+UpdateMapFiles "info"
+
+SwitchTagCache 11
+OpenCacheFile "maps\sc150.map"
+PortTag !UpdateMapFiles *.scnr
+Exit
+UpdateMapFiles "info"
+
+SwitchTagCache 0
+
+GenerateCampaignFile "info"
+
+SaveModPackage "modsfolder\ODST 360 Campaign Test.pak"
+ExitModPackage
+
+DumpLog "workingfolder\logs\odst_360_campaign_test.txt"
+
+Quit

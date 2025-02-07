@@ -1,0 +1,111 @@
+D:\ElDewrito\0.7.1\maps\tags.dat
+
+SetVariable workingfolder "C:\Users\Harry Ricketts\Documents\GitHub\MtnDewIt\ElDewrito-Campaign"
+SetVariable modsfolder "D:\ElDewrito\0.7.1\mods"
+SetVariable maps "F:\Bruh\H3Maps"
+SetVariable info "F:\Bruh\H3Maps\info"
+
+UseAudioCache "workingfolder\H3AudioCache"
+
+CreateModPackage 12 large
+H3 360 Campaign Test
+H3 360 Campaign Test
+MtnDewIt
+0.1
+Campaign
+mainmenu
+005_intro
+010_jungle
+020_base
+030_outskirts
+040_voi
+050_floodvoi
+070_waste
+100_citadel
+110_hc
+120_halo
+130_epilogue
+
+SwitchTagCache 0
+NameTag levels\ui\mainmenu\mainmenu.scenario levels\ui\mainmenu\mainmenu_ho
+OpenCacheFile "maps\mainmenu.map"
+PortTag !UpdateMapFiles *.scnr
+Exit
+UpdateMapFiles "info"
+
+SwitchTagCache 1
+OpenCacheFile "maps\005_intro.map"
+PortTag !UpdateMapFiles *.scnr
+Exit
+UpdateMapFiles "info"
+
+SwitchTagCache 2
+OpenCacheFile "maps\010_jungle.map"
+PortTag !UpdateMapFiles *.scnr
+Exit
+UpdateMapFiles "info"
+
+SwitchTagCache 3
+OpenCacheFile "maps\020_base.map"
+PortTag !UpdateMapFiles *.scnr
+Exit
+UpdateMapFiles "info"
+
+SwitchTagCache 4
+OpenCacheFile "maps\030_outskirts.map"
+PortTag !UpdateMapFiles *.scnr
+Exit
+UpdateMapFiles "info"
+
+SwitchTagCache 5
+OpenCacheFile "maps\040_voi.map"
+PortTag !UpdateMapFiles *.scnr
+Exit
+UpdateMapFiles "info"
+
+SwitchTagCache 6
+OpenCacheFile "maps\050_floodvoi.map"
+PortTag !UpdateMapFiles *.scnr
+Exit
+UpdateMapFiles "info"
+
+SwitchTagCache 7
+OpenCacheFile "maps\070_waste.map"
+PortTag !UpdateMapFiles *.scnr
+Exit
+UpdateMapFiles "info"
+
+SwitchTagCache 8
+OpenCacheFile "maps\100_citadel.map"
+PortTag !UpdateMapFiles *.scnr
+Exit
+UpdateMapFiles "info"
+
+SwitchTagCache 9
+OpenCacheFile "maps\110_hc.map"
+PortTag !UpdateMapFiles *.scnr
+Exit
+UpdateMapFiles "info"
+
+SwitchTagCache 10
+OpenCacheFile "maps\120_halo.map"
+PortTag !UpdateMapFiles *.scnr
+Exit
+UpdateMapFiles "info"
+
+SwitchTagCache 11
+OpenCacheFile "maps\130_epilogue.map"
+PortTag !UpdateMapFiles *.scnr
+Exit
+UpdateMapFiles "info"
+
+SwitchTagCache 0
+
+GenerateCampaignFile "info"
+
+SaveModPackage "modsfolder\H3 360 Campaign Test.pak"
+ExitModPackage
+
+DumpLog "workingfolder\logs\h3_360_campaign_test.txt"
+
+Quit

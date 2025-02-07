@@ -1,0 +1,105 @@
+D:\ElDewrito\0.7.1\maps\tags.dat
+
+SetVariable workingfolder "C:\Users\Harry Ricketts\Documents\GitHub\MtnDewIt\ElDewrito-Campaign"
+SetVariable modsfolder "D:\ElDewrito\0.7.1\mods"
+SetVariable maps "D:\SteamLibrary\steamapps\common\Halo The Master Chief Collection\halo3odst\maps"
+SetVariable info "D:\SteamLibrary\steamapps\common\Halo The Master Chief Collection\halo3odst\maps\info"
+
+UseAudioCache "workingfolder\ODSTMCCAudioCache"
+
+CreateModPackage 11 large
+ODST MCC Campaign Test
+ODST MCC Campaign Test
+MtnDewIt
+0.1
+Campaign
+
+mainmenu
+c100
+c200
+h100
+l200
+l300
+sc100
+sc110
+sc120
+sc130
+sc140
+sc150
+
+SwitchTagCache 0
+OpenCacheFile "maps\c100.map"
+PortTag !UpdateMapFiles *.scnr
+Exit
+UpdateMapFiles "info"
+
+SwitchTagCache 1
+OpenCacheFile "maps\c200.map"
+PortTag !UpdateMapFiles *.scnr
+Exit
+UpdateMapFiles "info"
+
+SwitchTagCache 2
+OpenCacheFile "maps\h100.map"
+PortTag !UpdateMapFiles *.scnr
+Exit
+UpdateMapFiles "info"
+
+SwitchTagCache 3
+OpenCacheFile "maps\l200.map"
+PortTag !UpdateMapFiles *.scnr
+Exit
+UpdateMapFiles "info"
+
+SwitchTagCache 4
+OpenCacheFile "maps\l300.map"
+PortTag !UpdateMapFiles *.scnr
+Exit
+UpdateMapFiles "info"
+
+SwitchTagCache 5
+OpenCacheFile "maps\sc100.map"
+PortTag !UpdateMapFiles *.scnr
+Exit
+UpdateMapFiles "info"
+
+SwitchTagCache 6
+OpenCacheFile "maps\sc110.map"
+PortTag !UpdateMapFiles *.scnr
+Exit
+UpdateMapFiles "info"
+
+SwitchTagCache 7
+OpenCacheFile "maps\sc120.map"
+PortTag !UpdateMapFiles *.scnr
+Exit
+UpdateMapFiles "info"
+
+SwitchTagCache 8
+OpenCacheFile "maps\sc130.map"
+PortTag !UpdateMapFiles *.scnr
+Exit
+UpdateMapFiles "info"
+
+SwitchTagCache 9
+OpenCacheFile "maps\sc140.map"
+PortTag !UpdateMapFiles *.scnr
+Exit
+UpdateMapFiles "info"
+
+SwitchTagCache 10
+OpenCacheFile "maps\sc150.map"
+PortTag !UpdateMapFiles *.scnr
+Exit
+UpdateMapFiles "info"
+
+SwitchTagCache 0
+
+GenerateCampaignFile "info"
+
+SaveModPackage "modsfolder\ODST MCC Campaign Test.pak"
+ExitModPackage
+
+DumpLog "workingfolder\logs\odst_mcc_campaign_test.txt"
+
+Quit
