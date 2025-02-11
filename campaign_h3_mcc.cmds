@@ -7,9 +7,9 @@ SetVariable info "D:\SteamLibrary\steamapps\common\Halo The Master Chief Collect
 
 UseAudioCache "workingfolder\H3MCCAudioCache"
 
-CreateModPackage 11 large
-H3 MCC Campaign Test
-H3 MCC Campaign Test
+CreateModPackage 6 large
+H3 MCC Campaign Test P1
+H3 MCC Campaign Test P1
 MtnDewIt
 0.1
 Campaign
@@ -19,11 +19,6 @@ Campaign
 030_outskirts
 040_voi
 050_floodvoi
-070_waste
-100_citadel
-110_hc
-120_halo
-130_epilogue
 
 SwitchTagCache 0
 OpenCacheFile "maps\005_intro.map"
@@ -61,31 +56,51 @@ PortTag !UpdateMapFiles *.scnr
 Exit
 UpdateMapFiles "info"
 
-SwitchTagCache 6
+SwitchTagCache 0
+
+GenerateCampaignFile "info"
+
+SaveModPackage "modsfolder\H3 MCC Campaign Test P1.pak"
+ExitModPackage
+
+
+CreateModPackage 5 large
+H3 MCC Campaign Test P2
+H3 MCC Campaign Test P2
+MtnDewIt
+0.1
+Campaign
+070_waste
+100_citadel
+110_hc
+120_halo
+130_epilogue
+
+SwitchTagCache 0
 OpenCacheFile "maps\070_waste.map"
 PortTag !UpdateMapFiles *.scnr
 Exit
 UpdateMapFiles "info"
 
-SwitchTagCache 7
+SwitchTagCache 1
 OpenCacheFile "maps\100_citadel.map"
 PortTag !UpdateMapFiles *.scnr
 Exit
 UpdateMapFiles "info"
 
-SwitchTagCache 8
+SwitchTagCache 2
 OpenCacheFile "maps\110_hc.map"
 PortTag !UpdateMapFiles *.scnr
 Exit
 UpdateMapFiles "info"
 
-SwitchTagCache 9
+SwitchTagCache 3
 OpenCacheFile "maps\120_halo.map"
 PortTag !UpdateMapFiles *.scnr
 Exit
 UpdateMapFiles "info"
 
-SwitchTagCache 10
+SwitchTagCache 4
 OpenCacheFile "maps\130_epilogue.map"
 PortTag !UpdateMapFiles *.scnr
 Exit
@@ -95,7 +110,7 @@ SwitchTagCache 0
 
 GenerateCampaignFile "info"
 
-SaveModPackage "modsfolder\H3 MCC Campaign Test.pak"
+SaveModPackage "modsfolder\H3 MCC Campaign Test P2.pak"
 ExitModPackage
 
 DumpLog "workingfolder\logs\h3_mcc_campaign_test.txt"

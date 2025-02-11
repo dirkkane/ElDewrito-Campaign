@@ -7,9 +7,9 @@ SetVariable info "D:\SteamLibrary\steamapps\common\Halo The Master Chief Collect
 
 UseAudioCache "workingfolder\ODSTMCCAudioCache"
 
-CreateModPackage 11 large
-ODST MCC Campaign Test
-ODST MCC Campaign Test
+CreateModPackage 7 large
+ODST MCC Campaign Test P1
+ODST MCC Campaign Test P1
 MtnDewIt
 0.1
 Campaign
@@ -20,10 +20,6 @@ l200
 l300
 sc100
 sc110
-sc120
-sc130
-sc140
-sc150
 
 SwitchTagCache 0
 OpenCacheFile "maps\c100.map"
@@ -67,25 +63,44 @@ PortTag !UpdateMapFiles *.scnr
 Exit
 UpdateMapFiles "info"
 
-SwitchTagCache 7
+SwitchTagCache 0
+
+GenerateCampaignFile "info"
+
+SaveModPackage "modsfolder\ODST MCC Campaign Test P1.pak"
+ExitModPackage
+
+
+CreateModPackage 7 large
+ODST MCC Campaign Test P2
+ODST MCC Campaign Test P2
+MtnDewIt
+0.1
+Campaign
+sc120
+sc130
+sc140
+sc150
+
+SwitchTagCache 0
 OpenCacheFile "maps\sc120.map"
 PortTag !UpdateMapFiles *.scnr
 Exit
 UpdateMapFiles "info"
 
-SwitchTagCache 8
+SwitchTagCache 1
 OpenCacheFile "maps\sc130.map"
 PortTag !UpdateMapFiles *.scnr
 Exit
 UpdateMapFiles "info"
 
-SwitchTagCache 9
+SwitchTagCache 2
 OpenCacheFile "maps\sc140.map"
 PortTag !UpdateMapFiles *.scnr
 Exit
 UpdateMapFiles "info"
 
-SwitchTagCache 10
+SwitchTagCache 3
 OpenCacheFile "maps\sc150.map"
 PortTag !UpdateMapFiles *.scnr
 Exit
@@ -95,7 +110,7 @@ SwitchTagCache 0
 
 GenerateCampaignFile "info"
 
-SaveModPackage "modsfolder\ODST MCC Campaign Test.pak"
+SaveModPackage "modsfolder\ODST MCC Campaign Test P2.pak"
 ExitModPackage
 
 DumpLog "workingfolder\logs\odst_mcc_campaign_test.txt"
