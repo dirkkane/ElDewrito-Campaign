@@ -7,7 +7,7 @@ SetVariable info "D:\SteamLibrary\steamapps\common\Halo The Master Chief Collect
 
 UseAudioCache "workingfolder\ODSTMCCAudioCache"
 
-CreateModPackage 7 large
+CreateModPackage 4 large
 ODST MCC Campaign Test P1
 ODST MCC Campaign Test P1
 MtnDewIt
@@ -17,9 +17,6 @@ c100
 c200
 h100
 l200
-l300
-sc100
-sc110
 
 SwitchTagCache 0
 OpenCacheFile "maps\c100.map"
@@ -45,24 +42,6 @@ PortTag !UpdateMapFiles *.scnr
 Exit
 UpdateMapFiles "info"
 
-SwitchTagCache 4
-OpenCacheFile "maps\l300.map"
-PortTag !UpdateMapFiles *.scnr
-Exit
-UpdateMapFiles "info"
-
-SwitchTagCache 5
-OpenCacheFile "maps\sc100.map"
-PortTag !UpdateMapFiles *.scnr
-Exit
-UpdateMapFiles "info"
-
-SwitchTagCache 6
-OpenCacheFile "maps\sc110.map"
-PortTag !UpdateMapFiles *.scnr
-Exit
-UpdateMapFiles "info"
-
 SwitchTagCache 0
 
 GenerateCampaignFile "info"
@@ -71,37 +50,37 @@ SaveModPackage "modsfolder\ODST MCC Campaign Test P1.pak"
 ExitModPackage
 
 
-CreateModPackage 7 large
+CreateModPackage 4 large
 ODST MCC Campaign Test P2
 ODST MCC Campaign Test P2
 MtnDewIt
 0.1
 Campaign
+l300
+sc100
+sc110
 sc120
-sc130
-sc140
-sc150
 
 SwitchTagCache 0
-OpenCacheFile "maps\sc120.map"
+OpenCacheFile "maps\l300.map"
 PortTag !UpdateMapFiles *.scnr
 Exit
 UpdateMapFiles "info"
 
 SwitchTagCache 1
-OpenCacheFile "maps\sc130.map"
+OpenCacheFile "maps\sc100.map"
 PortTag !UpdateMapFiles *.scnr
 Exit
 UpdateMapFiles "info"
 
 SwitchTagCache 2
-OpenCacheFile "maps\sc140.map"
+OpenCacheFile "maps\sc110.map"
 PortTag !UpdateMapFiles *.scnr
 Exit
 UpdateMapFiles "info"
 
 SwitchTagCache 3
-OpenCacheFile "maps\sc150.map"
+OpenCacheFile "maps\sc120.map"
 PortTag !UpdateMapFiles *.scnr
 Exit
 UpdateMapFiles "info"
@@ -111,6 +90,42 @@ SwitchTagCache 0
 GenerateCampaignFile "info"
 
 SaveModPackage "modsfolder\ODST MCC Campaign Test P2.pak"
+ExitModPackage
+
+
+CreateModPackage 3 large
+ODST MCC Campaign Test P3
+ODST MCC Campaign Test P3
+MtnDewIt
+0.1
+Campaign
+sc130
+sc140
+sc150
+
+SwitchTagCache 0
+OpenCacheFile "maps\sc130.map"
+PortTag !UpdateMapFiles *.scnr
+Exit
+UpdateMapFiles "info"
+
+SwitchTagCache 1
+OpenCacheFile "maps\sc140.map"
+PortTag !UpdateMapFiles *.scnr
+Exit
+UpdateMapFiles "info"
+
+SwitchTagCache 2
+OpenCacheFile "maps\sc150.map"
+PortTag !UpdateMapFiles *.scnr
+Exit
+UpdateMapFiles "info"
+
+SwitchTagCache 0
+
+GenerateCampaignFile "info"
+
+SaveModPackage "modsfolder\ODST MCC Campaign Test P3.pak"
 ExitModPackage
 
 DumpLog "workingfolder\logs\odst_mcc_campaign_test.txt"

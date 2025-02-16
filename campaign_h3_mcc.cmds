@@ -125,7 +125,7 @@ SwitchTagCache 0
 
 GenerateCampaignFile "info"
 
-SaveModPackage "modsfolder\H3 MCC Campaign Test P2.pak"
+SaveModPackage "modsfolder\H3 MCC Campaign Test P3.pak"
 ExitModPackage
 
 DumpLog "workingfolder\logs\h3_mcc_campaign_test.txt"
