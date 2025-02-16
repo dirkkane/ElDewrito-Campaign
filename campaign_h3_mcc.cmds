@@ -7,7 +7,7 @@ SetVariable info "D:\SteamLibrary\steamapps\common\Halo The Master Chief Collect
 
 UseAudioCache "workingfolder\H3MCCAudioCache"
 
-CreateModPackage 6 large
+CreateModPackage 4 large
 H3 MCC Campaign Test P1
 H3 MCC Campaign Test P1
 MtnDewIt
@@ -17,8 +17,6 @@ Campaign
 010_jungle
 020_base
 030_outskirts
-040_voi
-050_floodvoi
 
 SwitchTagCache 0
 OpenCacheFile "maps\005_intro.map"
@@ -44,18 +42,6 @@ PortTag !UpdateMapFiles *.scnr
 Exit
 UpdateMapFiles "info"
 
-SwitchTagCache 4
-OpenCacheFile "maps\040_voi.map"
-PortTag !UpdateMapFiles *.scnr
-Exit
-UpdateMapFiles "info"
-
-SwitchTagCache 5
-OpenCacheFile "maps\050_floodvoi.map"
-PortTag !UpdateMapFiles *.scnr
-Exit
-UpdateMapFiles "info"
-
 SwitchTagCache 0
 
 GenerateCampaignFile "info"
@@ -64,43 +50,72 @@ SaveModPackage "modsfolder\H3 MCC Campaign Test P1.pak"
 ExitModPackage
 
 
-CreateModPackage 5 large
+CreateModPackage 4 large
 H3 MCC Campaign Test P2
 H3 MCC Campaign Test P2
 MtnDewIt
 0.1
 Campaign
+040_voi
+050_floodvoi
 070_waste
 100_citadel
-110_hc
-120_halo
-130_epilogue
 
 SwitchTagCache 0
-OpenCacheFile "maps\070_waste.map"
+OpenCacheFile "maps\040_voi.map"
 PortTag !UpdateMapFiles *.scnr
 Exit
 UpdateMapFiles "info"
 
 SwitchTagCache 1
-OpenCacheFile "maps\100_citadel.map"
+OpenCacheFile "maps\050_floodvoi.map"
 PortTag !UpdateMapFiles *.scnr
 Exit
 UpdateMapFiles "info"
 
 SwitchTagCache 2
-OpenCacheFile "maps\110_hc.map"
+OpenCacheFile "maps\070_waste.map"
 PortTag !UpdateMapFiles *.scnr
 Exit
 UpdateMapFiles "info"
 
 SwitchTagCache 3
+OpenCacheFile "maps\100_citadel.map"
+PortTag !UpdateMapFiles *.scnr
+Exit
+UpdateMapFiles "info"
+
+SwitchTagCache 0
+
+GenerateCampaignFile "info"
+
+SaveModPackage "modsfolder\H3 MCC Campaign Test P2.pak"
+ExitModPackage
+
+
+CreateModPackage 4 large
+H3 MCC Campaign Test P3
+H3 MCC Campaign Test P3
+MtnDewIt
+0.1
+Campaign
+110_hc
+120_halo
+130_epilogue
+
+SwitchTagCache 0
+OpenCacheFile "maps\110_hc.map"
+PortTag !UpdateMapFiles *.scnr
+Exit
+UpdateMapFiles "info"
+
+SwitchTagCache 1
 OpenCacheFile "maps\120_halo.map"
 PortTag !UpdateMapFiles *.scnr
 Exit
 UpdateMapFiles "info"
 
-SwitchTagCache 4
+SwitchTagCache 2
 OpenCacheFile "maps\130_epilogue.map"
 PortTag !UpdateMapFiles *.scnr
 Exit
