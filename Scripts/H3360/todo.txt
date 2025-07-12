@@ -1,0 +1,6 @@
+* Add sprint animations for all weapons
+* Fix Chapter titles not appearing
+* Fix multikill medal broken bitmap
+* Other unforeseen issues
+* Fix scoring ui
+* infection forms dont infect living marines
