@@ -103,6 +103,8 @@ SwitchTagCache 0
 
 GenerateCampaignFile "info"
 
+addmodfiles workingfolder\Scripts\H3360\assets
+
 SaveModPackage "modsfolder\H3 360 Campaign Test.pak"
 ExitModPackage
 
