@@ -28,108 +28,72 @@ mainmenu
 
 SwitchTagCache 0
 NameTag levels\ui\mainmenu\mainmenu.scenario levels\ui\mainmenu\mainmenu_ho
-openmodpackage workingfolder\paks\h3styles.pak
-ApplyModPackage
-exitmodpackage
 OpenCacheFile "maps\mainmenu.map"
 PortTag !UpdateMapFiles *.scnr
 Exit
 UpdateMapFiles "info"
 
 SwitchTagCache 1
-openmodpackage workingfolder\paks\h3styles.pak
-ApplyModPackage
-exitmodpackage
 OpenCacheFile "maps\005_intro.map"
 PortTag !UpdateMapFiles *.scnr
 Exit
 UpdateMapFiles "info"
 
 SwitchTagCache 2
-openmodpackage workingfolder\paks\h3styles.pak
-ApplyModPackage
-exitmodpackage
 OpenCacheFile "maps\010_jungle.map"
 PortTag !UpdateMapFiles *.scnr
 Exit
 UpdateMapFiles "info"
 
 SwitchTagCache 3
-openmodpackage workingfolder\paks\h3styles.pak
-ApplyModPackage
-exitmodpackage
 OpenCacheFile "maps\020_base.map"
 PortTag !UpdateMapFiles *.scnr
 Exit
 UpdateMapFiles "info"
 
 SwitchTagCache 4
-openmodpackage workingfolder\paks\h3styles.pak
-ApplyModPackage
-exitmodpackage
 OpenCacheFile "maps\030_outskirts.map"
 PortTag !UpdateMapFiles *.scnr
 Exit
 UpdateMapFiles "info"
 
 SwitchTagCache 5
-openmodpackage workingfolder\paks\h3styles.pak
-ApplyModPackage
-exitmodpackage
 OpenCacheFile "maps\040_voi.map"
 PortTag !UpdateMapFiles *.scnr
 Exit
 UpdateMapFiles "info"
 
 SwitchTagCache 6
-openmodpackage workingfolder\paks\h3styles.pak
-ApplyModPackage
-exitmodpackage
 OpenCacheFile "maps\050_floodvoi.map"
 PortTag !UpdateMapFiles *.scnr
 Exit
 UpdateMapFiles "info"
 
 SwitchTagCache 7
-openmodpackage workingfolder\paks\h3styles.pak
-ApplyModPackage
-exitmodpackage
 OpenCacheFile "maps\070_waste.map"
 PortTag !UpdateMapFiles *.scnr
 Exit
 UpdateMapFiles "info"
 
 SwitchTagCache 8
-openmodpackage workingfolder\paks\h3styles.pak
-ApplyModPackage
-exitmodpackage
 OpenCacheFile "maps\100_citadel.map"
 PortTag !UpdateMapFiles *.scnr
 Exit
 UpdateMapFiles "info"
 
 SwitchTagCache 9
-openmodpackage workingfolder\paks\h3styles.pak
-ApplyModPackage
-exitmodpackage
 OpenCacheFile "maps\110_hc.map"
 PortTag !UpdateMapFiles *.scnr
 Exit
 UpdateMapFiles "info"
 
 SwitchTagCache 10
-openmodpackage workingfolder\paks\h3styles.pak
-ApplyModPackage
-exitmodpackage
 OpenCacheFile "maps\120_halo.map"
 PortTag !UpdateMapFiles *.scnr
 Exit
 UpdateMapFiles "info"
 
 SwitchTagCache 11
-openmodpackage workingfolder\paks\h3styles.pak
-ApplyModPackage
-exitmodpackage
 OpenCacheFile "maps\130_epilogue.map"
 PortTag !UpdateMapFiles *.scnr
 Exit
