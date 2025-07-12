@@ -1,0 +1,280 @@
+echo ==Sprint Meter==
+edittag ui\chud\globals.chud_globals_definition
+setfield HudGlobals[0].HudAttributes[0].MotionSensorOrigin 82 1015
+savetagchanges
+exit
+
+edittag ui\chud\spartan.chud_definition
+setfield HudWidgets[3].PlacementData[0].Offset 7.5 25
+addblockelements HudWidgets
+editblock hudwidgets 23
+SetField Name stamina_meter
+SetField ScriptingClass Stamina
+SetField BaseFlags None
+SetField SortLayer Parent
+AddBlockElements StateData 1
+SetField StateData[0].GameState None
+SetField StateData[0].SkinState None
+SetField StateData[0].GameTeam None
+SetField StateData[0].WindowState None
+SetField StateData[0].MultiplayerEvents None
+SetField StateData[0].UnitBaseFlags None
+SetField StateData[0].EditorFlags None
+SetField StateData[0].HindsightState None
+SetField StateData[0].SkullFlags None
+SetField StateData[0].SurvivalRoundFlags None
+SetField StateData[0].SurvivalWaveFlags None
+SetField StateData[0].SurvivalLivesFlags None
+SetField StateData[0].SurvivalDifficultyFlags None
+SetField StateData[0].GeneralKudosFlags None
+SetField StateData[0].UnitZoomFlags None
+SetField StateData[0].UnitInventoryFlags 0
+SetField StateData[0].Unused3 0
+SetField StateData[0].UnitGeneralFlags FirstPersonCamera
+SetField StateData[0].Unused4 0
+SetField StateData[0].WeaponKudosFlags None
+SetField StateData[0].WeaponStatusFlags None
+SetField StateData[0].WeaponTargetFlags None
+SetField StateData[0].WeaponTargetBFlags None
+SetField StateData[0].Player_SpecialFlags None
+SetField StateData[0].Weapon_SpecialFlags None
+SetField StateData[0].InverseFlags NotZoomedIn
+SetField StateData[0].UnusedFlags4 0
+SetField StateData[0].ConsumableFlags None
+SetField StateData[0].EnergyMeterFlags None
+AddBlockElements PlacementData 1
+SetField PlacementData[0].Anchor BottomLeft
+SetField PlacementData[0].AnchorFlags 0
+SetField PlacementData[0].Origin 0 0
+SetField PlacementData[0].Offset 115 -95
+SetField PlacementData[0].Scale 1.1 1.1
+SetField ParallaxData ui\chud\parallax\spartan.chud_widget_parallax_data
+AddBlockElements BitmapWidgets 3
+SetField BitmapWidgets[0].Name border
+SetField BitmapWidgets[0].ScriptingClass UseParent
+SetField BitmapWidgets[0].BaseFlags None
+SetField BitmapWidgets[0].SortLayer Background
+AddBlockElements BitmapWidgets[0].StateData 1
+SetField BitmapWidgets[0].StateData[0].GameState None
+SetField BitmapWidgets[0].StateData[0].SkinState None
+SetField BitmapWidgets[0].StateData[0].GameTeam None
+SetField BitmapWidgets[0].StateData[0].WindowState None
+SetField BitmapWidgets[0].StateData[0].MultiplayerEvents None
+SetField BitmapWidgets[0].StateData[0].UnitBaseFlags None
+SetField BitmapWidgets[0].StateData[0].EditorFlags None
+SetField BitmapWidgets[0].StateData[0].HindsightState None
+SetField BitmapWidgets[0].StateData[0].SkullFlags None
+SetField BitmapWidgets[0].StateData[0].SurvivalRoundFlags None
+SetField BitmapWidgets[0].StateData[0].SurvivalWaveFlags None
+SetField BitmapWidgets[0].StateData[0].SurvivalLivesFlags None
+SetField BitmapWidgets[0].StateData[0].SurvivalDifficultyFlags None
+SetField BitmapWidgets[0].StateData[0].GeneralKudosFlags None
+SetField BitmapWidgets[0].StateData[0].UnitZoomFlags None
+SetField BitmapWidgets[0].StateData[0].UnitInventoryFlags 0
+SetField BitmapWidgets[0].StateData[0].Unused3 0
+SetField BitmapWidgets[0].StateData[0].UnitGeneralFlags None
+SetField BitmapWidgets[0].StateData[0].Unused4 0
+SetField BitmapWidgets[0].StateData[0].WeaponKudosFlags None
+SetField BitmapWidgets[0].StateData[0].WeaponStatusFlags None
+SetField BitmapWidgets[0].StateData[0].WeaponTargetFlags None
+SetField BitmapWidgets[0].StateData[0].WeaponTargetBFlags None
+SetField BitmapWidgets[0].StateData[0].Player_SpecialFlags Bit10_HO
+SetField BitmapWidgets[0].StateData[0].Weapon_SpecialFlags None
+SetField BitmapWidgets[0].StateData[0].InverseFlags None
+SetField BitmapWidgets[0].StateData[0].UnusedFlags4 0
+SetField BitmapWidgets[0].StateData[0].ConsumableFlags None
+SetField BitmapWidgets[0].StateData[0].EnergyMeterFlags None
+AddBlockElements BitmapWidgets[0].PlacementData 1
+SetField BitmapWidgets[0].PlacementData[0].Anchor Parent
+SetField BitmapWidgets[0].PlacementData[0].AnchorFlags 0
+SetField BitmapWidgets[0].PlacementData[0].Origin 0 0
+SetField BitmapWidgets[0].PlacementData[0].Offset 0 0
+SetField BitmapWidgets[0].PlacementData[0].Scale 1 1
+AddBlockElements BitmapWidgets[0].AnimationData 1
+SetField BitmapWidgets[0].AnimationData[0].Initializing.Flags 0
+SetField BitmapWidgets[0].AnimationData[0].Initializing.InputType Time
+SetField BitmapWidgets[0].AnimationData[0].Initializing.Animation ui\chud\animations\stamina1.chud_animation_definition
+SetField BitmapWidgets[0].AnimationData[0].Initializing.StateUnknown 0
+SetField BitmapWidgets[0].AnimationData[0].Active.Flags 0
+SetField BitmapWidgets[0].AnimationData[0].Active.InputType Time
+SetField BitmapWidgets[0].AnimationData[0].Active.Animation null
+SetField BitmapWidgets[0].AnimationData[0].Active.StateUnknown 0
+SetField BitmapWidgets[0].AnimationData[0].Flashing.Flags 0
+SetField BitmapWidgets[0].AnimationData[0].Flashing.InputType Time
+SetField BitmapWidgets[0].AnimationData[0].Flashing.Animation ui\chud\animations\stamina2.chud_animation_definition
+SetField BitmapWidgets[0].AnimationData[0].Flashing.StateUnknown 0
+SetField BitmapWidgets[0].AnimationData[0].Readying.Flags 0
+SetField BitmapWidgets[0].AnimationData[0].Readying.InputType Time
+SetField BitmapWidgets[0].AnimationData[0].Readying.Animation null
+SetField BitmapWidgets[0].AnimationData[0].Readying.StateUnknown 0
+SetField BitmapWidgets[0].AnimationData[0].Unreadying.Flags 0
+SetField BitmapWidgets[0].AnimationData[0].Unreadying.InputType Time
+SetField BitmapWidgets[0].AnimationData[0].Unreadying.Animation null
+SetField BitmapWidgets[0].AnimationData[0].Unreadying.StateUnknown 0
+SetField BitmapWidgets[0].AnimationData[0].Impulse.Flags 0
+SetField BitmapWidgets[0].AnimationData[0].Impulse.InputType Time
+SetField BitmapWidgets[0].AnimationData[0].Impulse.Animation null
+SetField BitmapWidgets[0].AnimationData[0].Impulse.StateUnknown 0
+AddBlockElements BitmapWidgets[0].RenderData 1
+SetField BitmapWidgets[0].RenderData[0].ShaderType Simple
+SetField BitmapWidgets[0].RenderData[0].BlendModeHO AlphaBlend
+SetField BitmapWidgets[0].RenderData[0].ExternalInput Zero
+SetField BitmapWidgets[0].RenderData[0].RangeInput Zero
+SetField BitmapWidgets[0].RenderData[0].LocalColorA 0 0 0 0
+SetField BitmapWidgets[0].RenderData[0].LocalColorB 0 0 0 0
+SetField BitmapWidgets[0].RenderData[0].LocalColorC 0 0 0 0
+SetField BitmapWidgets[0].RenderData[0].LocalColorD 0 0 0 0
+SetField BitmapWidgets[0].RenderData[0].LocalScalarA 0
+SetField BitmapWidgets[0].RenderData[0].LocalScalarB 0
+SetField BitmapWidgets[0].RenderData[0].LocalScalarC 0
+SetField BitmapWidgets[0].RenderData[0].LocalScalarD 0
+SetField BitmapWidgets[0].RenderData[0].OutputColorA SecondaryBackground
+SetField BitmapWidgets[0].RenderData[0].OutputColorB PrimaryBackground
+SetField BitmapWidgets[0].RenderData[0].OutputColorC HighlightForeground
+SetField BitmapWidgets[0].RenderData[0].OutputColorD LocalA
+SetField BitmapWidgets[0].RenderData[0].OutputColorE LocalA
+SetField BitmapWidgets[0].RenderData[0].OutputColorF LocalA
+SetField BitmapWidgets[0].RenderData[0].OutputScalarA FlashAnimation
+SetField BitmapWidgets[0].RenderData[0].OutputScalarB Input
+SetField BitmapWidgets[0].RenderData[0].OutputScalarC Input
+SetField BitmapWidgets[0].RenderData[0].OutputScalarD Input
+SetField BitmapWidgets[0].RenderData[0].OutputScalarE Input
+SetField BitmapWidgets[0].RenderData[0].OutputScalarF Input
+SetField BitmapWidgets[0].RenderData[0].ScissorRect 0 0 0 0
+SetField BitmapWidgets[0].RuntimeWidgetIndex 144
+SetField BitmapWidgets[0].Flags None
+SetField BitmapWidgets[0].Bitmap ui\chud\bitmaps\stamina_meter_border.bitmap
+SetField BitmapWidgets[0].BitmapSequenceIndex 0
+SetField BitmapWidgets[1].Name meter
+SetField BitmapWidgets[1].ScriptingClass UseParent
+SetField BitmapWidgets[1].BaseFlags None
+SetField BitmapWidgets[1].SortLayer Foreground
+AddBlockElements BitmapWidgets[1].PlacementData 1
+SetField BitmapWidgets[1].PlacementData[0].Anchor Parent
+SetField BitmapWidgets[1].PlacementData[0].AnchorFlags 0
+SetField BitmapWidgets[1].PlacementData[0].Origin 0 0
+SetField BitmapWidgets[1].PlacementData[0].Offset 0 0
+SetField BitmapWidgets[1].PlacementData[0].Scale 1 1
+AddBlockElements BitmapWidgets[1].AnimationData 1
+SetField BitmapWidgets[1].AnimationData[0].Initializing.Flags 0
+SetField BitmapWidgets[1].AnimationData[0].Initializing.InputType Time
+SetField BitmapWidgets[1].AnimationData[0].Initializing.Animation ui\chud\animations\stamina1.chud_animation_definition
+SetField BitmapWidgets[1].AnimationData[0].Initializing.StateUnknown 0
+SetField BitmapWidgets[1].AnimationData[0].Active.Flags 0
+SetField BitmapWidgets[1].AnimationData[0].Active.InputType Time
+SetField BitmapWidgets[1].AnimationData[0].Active.Animation null
+SetField BitmapWidgets[1].AnimationData[0].Active.StateUnknown 0
+SetField BitmapWidgets[1].AnimationData[0].Flashing.Flags 0
+SetField BitmapWidgets[1].AnimationData[0].Flashing.InputType Time
+SetField BitmapWidgets[1].AnimationData[0].Flashing.Animation null
+SetField BitmapWidgets[1].AnimationData[0].Flashing.StateUnknown 0
+SetField BitmapWidgets[1].AnimationData[0].Readying.Flags 0
+SetField BitmapWidgets[1].AnimationData[0].Readying.InputType Time
+SetField BitmapWidgets[1].AnimationData[0].Readying.Animation null
+SetField BitmapWidgets[1].AnimationData[0].Readying.StateUnknown 0
+SetField BitmapWidgets[1].AnimationData[0].Unreadying.Flags 0
+SetField BitmapWidgets[1].AnimationData[0].Unreadying.InputType Time
+SetField BitmapWidgets[1].AnimationData[0].Unreadying.Animation null
+SetField BitmapWidgets[1].AnimationData[0].Unreadying.StateUnknown 0
+SetField BitmapWidgets[1].AnimationData[0].Impulse.Flags 0
+SetField BitmapWidgets[1].AnimationData[0].Impulse.InputType Time
+SetField BitmapWidgets[1].AnimationData[0].Impulse.Animation null
+SetField BitmapWidgets[1].AnimationData[0].Impulse.StateUnknown 0
+AddBlockElements BitmapWidgets[1].RenderData 1
+SetField BitmapWidgets[1].RenderData[0].ShaderType Meter
+SetField BitmapWidgets[1].RenderData[0].BlendModeHO AlphaBlend
+SetField BitmapWidgets[1].RenderData[0].ExternalInput UnitStaminaCurrent
+SetField BitmapWidgets[1].RenderData[0].RangeInput Zero
+SetField BitmapWidgets[1].RenderData[0].LocalColorA 0 0 0 0
+SetField BitmapWidgets[1].RenderData[0].LocalColorB 0 0 0 0
+SetField BitmapWidgets[1].RenderData[0].LocalColorC 0 0 0 0
+SetField BitmapWidgets[1].RenderData[0].LocalColorD 0 0 0 0
+SetField BitmapWidgets[1].RenderData[0].LocalScalarA 0
+SetField BitmapWidgets[1].RenderData[0].LocalScalarB 1
+SetField BitmapWidgets[1].RenderData[0].LocalScalarC 0
+SetField BitmapWidgets[1].RenderData[0].LocalScalarD 0
+SetField BitmapWidgets[1].RenderData[0].OutputColorA SecondaryBackground
+SetField BitmapWidgets[1].RenderData[0].OutputColorB PrimaryBackground
+SetField BitmapWidgets[1].RenderData[0].OutputColorC HighlightForeground
+SetField BitmapWidgets[1].RenderData[0].OutputColorD LocalA
+SetField BitmapWidgets[1].RenderData[0].OutputColorE LocalA
+SetField BitmapWidgets[1].RenderData[0].OutputColorF LocalA
+SetField BitmapWidgets[1].RenderData[0].OutputScalarA Input
+SetField BitmapWidgets[1].RenderData[0].OutputScalarB LocalA
+SetField BitmapWidgets[1].RenderData[0].OutputScalarC LocalB
+SetField BitmapWidgets[1].RenderData[0].OutputScalarD LocalC
+SetField BitmapWidgets[1].RenderData[0].OutputScalarE LocalD
+SetField BitmapWidgets[1].RenderData[0].OutputScalarF RangeInput
+SetField BitmapWidgets[1].RenderData[0].ScissorRect 0 0 0 0
+SetField BitmapWidgets[1].RuntimeWidgetIndex 145
+SetField BitmapWidgets[1].Flags None
+SetField BitmapWidgets[1].Bitmap ui\chud\bitmaps\stamina_meter.bitmap
+SetField BitmapWidgets[1].BitmapSequenceIndex 0
+SetField BitmapWidgets[2].Name icon
+SetField BitmapWidgets[2].ScriptingClass UseParent
+SetField BitmapWidgets[2].BaseFlags None
+SetField BitmapWidgets[2].SortLayer Background
+AddBlockElements BitmapWidgets[2].PlacementData 1
+SetField BitmapWidgets[2].PlacementData[0].Anchor Parent
+SetField BitmapWidgets[2].PlacementData[0].AnchorFlags 0
+SetField BitmapWidgets[2].PlacementData[0].Origin 0 0
+SetField BitmapWidgets[2].PlacementData[0].Offset -110 -90
+SetField BitmapWidgets[2].PlacementData[0].Scale 0.9 0.9
+AddBlockElements BitmapWidgets[2].AnimationData 1
+SetField BitmapWidgets[2].AnimationData[0].Initializing.Flags 0
+SetField BitmapWidgets[2].AnimationData[0].Initializing.InputType Time
+SetField BitmapWidgets[2].AnimationData[0].Initializing.Animation ui\chud\animations\stamina1.chud_animation_definition
+SetField BitmapWidgets[2].AnimationData[0].Initializing.StateUnknown 0
+SetField BitmapWidgets[2].AnimationData[0].Active.Flags 0
+SetField BitmapWidgets[2].AnimationData[0].Active.InputType Time
+SetField BitmapWidgets[2].AnimationData[0].Active.Animation ui\chud\animations\dim_lines.chud_animation_definition
+SetField BitmapWidgets[2].AnimationData[0].Active.StateUnknown 0
+SetField BitmapWidgets[2].AnimationData[0].Flashing.Flags 0
+SetField BitmapWidgets[2].AnimationData[0].Flashing.InputType Time
+SetField BitmapWidgets[2].AnimationData[0].Flashing.Animation null
+SetField BitmapWidgets[2].AnimationData[0].Flashing.StateUnknown 0
+SetField BitmapWidgets[2].AnimationData[0].Readying.Flags 0
+SetField BitmapWidgets[2].AnimationData[0].Readying.InputType Time
+SetField BitmapWidgets[2].AnimationData[0].Readying.Animation null
+SetField BitmapWidgets[2].AnimationData[0].Readying.StateUnknown 0
+SetField BitmapWidgets[2].AnimationData[0].Unreadying.Flags 0
+SetField BitmapWidgets[2].AnimationData[0].Unreadying.InputType Time
+SetField BitmapWidgets[2].AnimationData[0].Unreadying.Animation null
+SetField BitmapWidgets[2].AnimationData[0].Unreadying.StateUnknown 0
+SetField BitmapWidgets[2].AnimationData[0].Impulse.Flags 0
+SetField BitmapWidgets[2].AnimationData[0].Impulse.InputType Time
+SetField BitmapWidgets[2].AnimationData[0].Impulse.Animation null
+SetField BitmapWidgets[2].AnimationData[0].Impulse.StateUnknown 0
+AddBlockElements BitmapWidgets[2].RenderData 1
+SetField BitmapWidgets[2].RenderData[0].ShaderType Simple
+SetField BitmapWidgets[2].RenderData[0].BlendModeHO AlphaBlend
+SetField BitmapWidgets[2].RenderData[0].ExternalInput Zero
+SetField BitmapWidgets[2].RenderData[0].RangeInput Zero
+SetField BitmapWidgets[2].RenderData[0].LocalColorA 0 0 0 0
+SetField BitmapWidgets[2].RenderData[0].LocalColorB 0 0 0 0
+SetField BitmapWidgets[2].RenderData[0].LocalColorC 0 0 0 0
+SetField BitmapWidgets[2].RenderData[0].LocalColorD 0 0 0 0
+SetField BitmapWidgets[2].RenderData[0].LocalScalarA 0
+SetField BitmapWidgets[2].RenderData[0].LocalScalarB 0
+SetField BitmapWidgets[2].RenderData[0].LocalScalarC 0
+SetField BitmapWidgets[2].RenderData[0].LocalScalarD 0
+SetField BitmapWidgets[2].RenderData[0].OutputColorA SecondaryBackground
+SetField BitmapWidgets[2].RenderData[0].OutputColorB PrimaryBackground
+SetField BitmapWidgets[2].RenderData[0].OutputColorC HighlightForeground
+SetField BitmapWidgets[2].RenderData[0].OutputColorD LocalA
+SetField BitmapWidgets[2].RenderData[0].OutputColorE LocalA
+SetField BitmapWidgets[2].RenderData[0].OutputColorF LocalA
+SetField BitmapWidgets[2].RenderData[0].OutputScalarA FlashAnimation
+SetField BitmapWidgets[2].RenderData[0].OutputScalarB Input
+SetField BitmapWidgets[2].RenderData[0].OutputScalarC Input
+SetField BitmapWidgets[2].RenderData[0].OutputScalarD Input
+SetField BitmapWidgets[2].RenderData[0].OutputScalarE Input
+SetField BitmapWidgets[2].RenderData[0].OutputScalarF Input
+SetField BitmapWidgets[2].RenderData[0].ScissorRect 0 0 0 0
+SetField BitmapWidgets[2].RuntimeWidgetIndex 146
+SetField BitmapWidgets[2].Flags None
+SetField BitmapWidgets[2].Bitmap ui\chud\bitmaps\stamina_icon.bitmap
+SetField BitmapWidgets[2].BitmapSequenceIndex 0
+SaveTagChanges
+Exit
+
