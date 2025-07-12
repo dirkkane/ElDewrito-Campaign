@@ -1,9 +1,9 @@
-D:\ElDewrito\0.7.1\maps\tags.dat
+basecache
 
-SetVariable workingfolder "C:\Users\Harry Ricketts\Documents\GitHub\MtnDewIt\ElDewrito-Campaign"
-SetVariable modsfolder "D:\ElDewrito\0.7.1\mods"
-SetVariable maps "F:\Bruh\H3Maps"
-SetVariable info "F:\Bruh\H3Maps\info"
+SetVariable workingfolder ""
+SetVariable modsfolder ""
+SetVariable maps ""
+SetVariable info ""
 
 UseAudioCache "workingfolder\H3AudioCache"
 
