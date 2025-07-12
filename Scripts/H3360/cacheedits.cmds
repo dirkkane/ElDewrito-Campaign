@@ -278,3 +278,124 @@ SetField BitmapWidgets[2].BitmapSequenceIndex 0
 SaveTagChanges
 Exit
 
+echo ==Weapon Offsets==
+edittag objects\weapons\pistol\plasma_pistol\plasma_pistol.weapon
+setfield WeaponTypeName offset_plasma_pistol
+setfield CenteredFirstPersonWeaponOffset 0 0 -0.035
+SaveTagChanges
+Exit
+edittag objects\weapons\pistol\needler\needler.weapon
+setfield WeaponTypeName offset_needler
+setfield CenteredFirstPersonWeaponOffset 0 0 -0.01
+SaveTagChanges
+Exit
+edittag objects\weapons\support_high\flak_cannon\flak_cannon.weapon
+setfield WeaponTypeName offset_fuel_rod
+setfield CenteredFirstPersonWeaponOffset 0 0 -0.01
+SaveTagChanges
+Exit
+edittag objects\weapons\rifle\covenant_carbine\covenant_carbine.weapon
+setfield WeaponTypeName offset_carbine_rife
+setfield CenteredFirstPersonWeaponOffset 0 0 -0.01
+SaveTagChanges
+Exit
+edittag objects\weapons\support_low\brute_shot\brute_shot.weapon
+setfield WeaponTypeName offset_bruteshot
+setfield CenteredFirstPersonWeaponOffset 0 0 -0.01
+SaveTagChanges
+Exit
+edittag objects\weapons\rifle\spike_rifle\spike_rifle.weapon
+setfield WeaponTypeName offset_spiker
+setfield CenteredFirstPersonWeaponOffset 0 0 -0.01
+SaveTagChanges
+Exit
+edittag objects\weapons\pistol\excavator\excavator.weapon
+setfield WeaponTypeName offset_mauler
+setfield CenteredFirstPersonWeaponOffset 0 0 -0.0175
+SaveTagChanges
+Exit
+edittag objects\weapons\rifle\beam_rifle\beam_rifle.weapon
+setfield WeaponTypeName offset_beam_rifle
+setfield CenteredFirstPersonWeaponOffset -0.025 0 -0.0175
+SaveTagChanges
+Exit
+edittag objects\weapons\melee\gravity_hammer\gravity_hammer.weapon
+setfield WeaponTypeName offset_gravity_hammer
+setfield CenteredFirstPersonWeaponOffset 0 0 -0.01
+SaveTagChanges
+Exit
+edittag objects\weapons\rifle\assault_rifle\assault_rifle.weapon
+setfield WeaponTypeName offset_assault_rife
+setfield CenteredFirstPersonWeaponOffset 0 0 -0.015
+SaveTagChanges
+Exit
+edittag objects\weapons\rifle\plasma_rifle\plasma_rifle.weapon
+setfield WeaponTypeName offset_plasma_rife
+setfield CenteredFirstPersonWeaponOffset 0.075 0 -0.025
+SaveTagChanges
+Exit
+edittag objects\weapons\rifle\battle_rifle\battle_rifle.weapon
+setfield WeaponTypeName offset_battle_rife
+setfield CenteredFirstPersonWeaponOffset 0.025 0 -0.015
+SaveTagChanges
+Exit
+edittag objects\weapons\rifle\smg\smg.weapon
+setfield WeaponTypeName offset_smg
+setfield CenteredFirstPersonWeaponOffset 0 0 -0.01
+SaveTagChanges
+Exit
+edittag objects\weapons\melee\energy_blade\energy_blade.weapon
+setfield WeaponTypeName offset_energy_sword
+setfield CenteredFirstPersonWeaponOffset 0 0 -0.01
+SaveTagChanges
+Exit
+edittag objects\weapons\melee\energy_blade\energy_blade_useless.weapon
+setfield WeaponTypeName offset_energy_sword
+setfield CenteredFirstPersonWeaponOffset 0 0 -0.01
+SaveTagChanges
+Exit
+edittag objects\weapons\pistol\magnum\magnum.weapon
+setfield WeaponTypeName offset_magnum
+setfield CenteredFirstPersonWeaponOffset 0 0 -0.04
+SaveTagChanges
+Exit
+edittag objects\weapons\support_high\rocket_launcher\rocket_launcher.weapon
+setfield WeaponTypeName offset_rocket_launcher
+setfield CenteredFirstPersonWeaponOffset 0.02 0 -0.01
+SaveTagChanges
+Exit
+edittag objects\weapons\rifle\shotgun\shotgun.weapon
+setfield WeaponTypeName offset_shotgun
+setfield CenteredFirstPersonWeaponOffset 0 0 -0.01
+SaveTagChanges
+Exit
+edittag objects\weapons\rifle\sniper_rifle\sniper_rifle.weapon
+setfield WeaponTypeName offset_sniper_rife
+setfield CenteredFirstPersonWeaponOffset 0 0 -0.02
+SaveTagChanges
+Exit
+edittag objects\weapons\support_high\spartan_laser\spartan_laser.weapon
+setfield WeaponTypeName offset_spartan_laser
+setfield CenteredFirstPersonWeaponOffset 0 0 -0.01
+SaveTagChanges
+Exit
+edittag objects\weapons\support_low\sentinel_gun\sentinel_gun.weapon
+setfield WeaponTypeName offset_sentinel_beam
+setfield CenteredFirstPersonWeaponOffset 0 -0.025 -0.05
+SaveTagChanges
+Exit
+edittag objects\weapons\multiplayer\flag\flag.weapon
+setfield WeaponTypeName offset_flag
+setfield CenteredFirstPersonWeaponOffset 0 0 -0.01
+SaveTagChanges
+Exit
+edittag objects\weapons\multiplayer\ball\ball.weapon
+setfield WeaponTypeName offset_skull
+setfield CenteredFirstPersonWeaponOffset 0 0 -0.0125
+SaveTagChanges
+Exit
+edittag objects\weapons\multiplayer\assault_bomb\assault_bomb.weapon
+setfield WeaponTypeName offset_bomb
+setfield CenteredFirstPersonWeaponOffset 0 0 -0.015
+SaveTagChanges
+Exit
