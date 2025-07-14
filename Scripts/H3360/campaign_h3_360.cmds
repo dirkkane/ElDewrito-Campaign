@@ -12,8 +12,7 @@ H3 360 Campaign Test
 H3 360 Campaign Test
 MtnDewIt
 0.1
-Campaign
-mainmenu
+Campaign mainmenu
 005_intro
 010_jungle
 020_base
@@ -28,83 +27,83 @@ mainmenu
 
 SwitchTagCache 0
 NameTag levels\ui\mainmenu\mainmenu.scenario levels\ui\mainmenu\mainmenu_ho
-OpenCacheFile "maps\mainmenu.map"
+OpenCacheFile "h3maps\mainmenu.map"
 PortTag !UpdateMapFiles *.scnr
 Exit
 UpdateMapFiles "info"
 
 SwitchTagCache 1
-OpenCacheFile "maps\005_intro.map"
+OpenCacheFile "h3maps\005_intro.map"
 PortTag !UpdateMapFiles *.scnr
 Exit
 UpdateMapFiles "info"
 runcommands workingfolder\Scripts\H3360\cacheedits.cmds
 
 SwitchTagCache 2
-OpenCacheFile "maps\010_jungle.map"
+OpenCacheFile "h3maps\010_jungle.map"
 PortTag !UpdateMapFiles *.scnr
 Exit
 UpdateMapFiles "info"
 runcommands workingfolder\Scripts\H3360\cacheedits.cmds
 
 SwitchTagCache 3
-OpenCacheFile "maps\020_base.map"
+OpenCacheFile "h3maps\020_base.map"
 PortTag !UpdateMapFiles *.scnr
 Exit
 UpdateMapFiles "info"
 runcommands workingfolder\Scripts\H3360\cacheedits.cmds
 
 SwitchTagCache 4
-OpenCacheFile "maps\030_outskirts.map"
+OpenCacheFile "h3maps\030_outskirts.map"
 PortTag !UpdateMapFiles *.scnr
 Exit
 UpdateMapFiles "info"
 runcommands workingfolder\Scripts\H3360\cacheedits.cmds
 
 SwitchTagCache 5
-OpenCacheFile "maps\040_voi.map"
+OpenCacheFile "h3maps\040_voi.map"
 PortTag !UpdateMapFiles *.scnr
 Exit
 UpdateMapFiles "info"
 runcommands workingfolder\Scripts\H3360\cacheedits.cmds
 
 SwitchTagCache 6
-OpenCacheFile "maps\050_floodvoi.map"
+OpenCacheFile "h3maps\050_floodvoi.map"
 PortTag !UpdateMapFiles *.scnr
 Exit
 UpdateMapFiles "info"
 runcommands workingfolder\Scripts\H3360\cacheedits.cmds
 
 SwitchTagCache 7
-OpenCacheFile "maps\070_waste.map"
+OpenCacheFile "h3maps\070_waste.map"
 PortTag !UpdateMapFiles *.scnr
 Exit
 UpdateMapFiles "info"
 runcommands workingfolder\Scripts\H3360\cacheedits.cmds
 
 SwitchTagCache 8
-OpenCacheFile "maps\100_citadel.map"
+OpenCacheFile "h3maps\100_citadel.map"
 PortTag !UpdateMapFiles *.scnr
 Exit
 UpdateMapFiles "info"
 runcommands workingfolder\Scripts\H3360\cacheedits.cmds
 
 SwitchTagCache 9
-OpenCacheFile "maps\110_hc.map"
+OpenCacheFile "h3maps\110_hc.map"
 PortTag !UpdateMapFiles *.scnr
 Exit
 UpdateMapFiles "info"
 runcommands workingfolder\Scripts\H3360\cacheedits.cmds
 
 SwitchTagCache 10
-OpenCacheFile "maps\120_halo.map"
+OpenCacheFile "h3maps\120_halo.map"
 PortTag !UpdateMapFiles *.scnr
 Exit
 UpdateMapFiles "info"
 runcommands workingfolder\Scripts\H3360\cacheedits.cmds
 
 SwitchTagCache 11
-OpenCacheFile "maps\130_epilogue.map"
+OpenCacheFile "h3maps\130_epilogue.map"
 PortTag !UpdateMapFiles *.scnr
 Exit
 UpdateMapFiles "info"
