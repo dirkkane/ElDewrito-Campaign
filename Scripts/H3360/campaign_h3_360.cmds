@@ -126,6 +126,8 @@ GenerateCampaignFile "info"
 
 addmodfiles workingfolder\Scripts\H3360\assets
 
+importfonts workingfolder\Scripts\H3360\font_package.bin
+
 SaveModPackage "modsfolder\H3 360 Campaign Test.pak"
 ExitModPackage
 
