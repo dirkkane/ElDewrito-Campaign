@@ -31,12 +31,14 @@ OpenCacheFile "h3maps\mainmenu.map"
 PortTag !UpdateMapFiles *.scnr
 Exit
 UpdateMapFiles "info"
+runcommands workingfolder\Scripts\H3360\portreplace.cmds
 
 SwitchTagCache 1
 OpenCacheFile "h3maps\005_intro.map"
 PortTag !UpdateMapFiles *.scnr
 Exit
 UpdateMapFiles "info"
+runcommands workingfolder\Scripts\H3360\portreplace.cmds
 runcommands workingfolder\Scripts\H3360\cacheedits.cmds
 
 SwitchTagCache 2
@@ -44,6 +46,7 @@ OpenCacheFile "h3maps\010_jungle.map"
 PortTag !UpdateMapFiles *.scnr
 Exit
 UpdateMapFiles "info"
+runcommands workingfolder\Scripts\H3360\portreplace.cmds
 runcommands workingfolder\Scripts\H3360\cacheedits.cmds
 
 SwitchTagCache 3
@@ -51,6 +54,7 @@ OpenCacheFile "h3maps\020_base.map"
 PortTag !UpdateMapFiles *.scnr
 Exit
 UpdateMapFiles "info"
+runcommands workingfolder\Scripts\H3360\portreplace.cmds
 runcommands workingfolder\Scripts\H3360\cacheedits.cmds
 
 SwitchTagCache 4
@@ -58,6 +62,7 @@ OpenCacheFile "h3maps\030_outskirts.map"
 PortTag !UpdateMapFiles *.scnr
 Exit
 UpdateMapFiles "info"
+runcommands workingfolder\Scripts\H3360\portreplace.cmds
 runcommands workingfolder\Scripts\H3360\cacheedits.cmds
 
 SwitchTagCache 5
@@ -65,6 +70,7 @@ OpenCacheFile "h3maps\040_voi.map"
 PortTag !UpdateMapFiles *.scnr
 Exit
 UpdateMapFiles "info"
+runcommands workingfolder\Scripts\H3360\portreplace.cmds
 runcommands workingfolder\Scripts\H3360\cacheedits.cmds
 
 SwitchTagCache 6
@@ -72,6 +78,7 @@ OpenCacheFile "h3maps\050_floodvoi.map"
 PortTag !UpdateMapFiles *.scnr
 Exit
 UpdateMapFiles "info"
+runcommands workingfolder\Scripts\H3360\portreplace.cmds
 runcommands workingfolder\Scripts\H3360\cacheedits.cmds
 
 SwitchTagCache 7
@@ -79,6 +86,7 @@ OpenCacheFile "h3maps\070_waste.map"
 PortTag !UpdateMapFiles *.scnr
 Exit
 UpdateMapFiles "info"
+runcommands workingfolder\Scripts\H3360\portreplace.cmds
 runcommands workingfolder\Scripts\H3360\cacheedits.cmds
 
 SwitchTagCache 8
@@ -86,6 +94,7 @@ OpenCacheFile "h3maps\100_citadel.map"
 PortTag !UpdateMapFiles *.scnr
 Exit
 UpdateMapFiles "info"
+runcommands workingfolder\Scripts\H3360\portreplace.cmds
 runcommands workingfolder\Scripts\H3360\cacheedits.cmds
 
 SwitchTagCache 9
@@ -93,6 +102,7 @@ OpenCacheFile "h3maps\110_hc.map"
 PortTag !UpdateMapFiles *.scnr
 Exit
 UpdateMapFiles "info"
+runcommands workingfolder\Scripts\H3360\portreplace.cmds
 runcommands workingfolder\Scripts\H3360\cacheedits.cmds
 
 SwitchTagCache 10
@@ -100,6 +110,7 @@ OpenCacheFile "h3maps\120_halo.map"
 PortTag !UpdateMapFiles *.scnr
 Exit
 UpdateMapFiles "info"
+runcommands workingfolder\Scripts\H3360\portreplace.cmds
 runcommands workingfolder\Scripts\H3360\cacheedits.cmds
 
 SwitchTagCache 11
@@ -107,6 +118,7 @@ OpenCacheFile "h3maps\130_epilogue.map"
 PortTag !UpdateMapFiles *.scnr
 Exit
 UpdateMapFiles "info"
+runcommands workingfolder\Scripts\H3360\portreplace.cmds
 
 SwitchTagCache 0
 
