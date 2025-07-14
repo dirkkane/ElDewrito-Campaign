@@ -1,5 +1,3 @@
-
-
 echo ==Weapon Offsets==
 edittag objects\weapons\pistol\plasma_pistol\plasma_pistol.weapon
 setfield WeaponTypeName offset_plasma_pistol
