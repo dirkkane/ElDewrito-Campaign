@@ -2,8 +2,8 @@ basecache
 
 SetVariable workingfolder ""
 SetVariable modsfolder ""
-SetVariable maps ""
 SetVariable info ""
+SetVariable h3maps ""
 
 UseAudioCache "workingfolder\H3AudioCache"
 
